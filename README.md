@@ -1,11 +1,8 @@
 # Blackjack
 
-## Rules
-
 * Descriptions of each method to implement are written into the `lib/`
   files. For each `lib/` file, there is a corresponding `spec/` file.
-* Run the specs as you solve the assessment. Solve the assessment in
-  this order:
+* Run the specs in this order:
 
 ```
 bundle exec rspec spec/deck_spec.rb

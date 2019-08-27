@@ -15,13 +15,14 @@ class Dealer < Player
 
   def play_hand(deck)
     hand.hit(deck) while !hand.busted? && hand.points < 17
+    #hand.hit(deck) while  hand.points < 17
   end
 
   def take_bet(player, amt)
     @bets[player] = amt
   end
 
-  def pay_bets
+ def pay_bets
     bets.keys.each {|player| player.pay_winnings(2*bets[player]) if player.hand.beats?(self.hand)}
   end
 end
